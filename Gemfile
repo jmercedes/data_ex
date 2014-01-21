@@ -46,3 +46,4 @@ end
 gem 'devise'
 gem 'prawn'
 gem 'font-awesome-rails'
+gem 'figaro'
