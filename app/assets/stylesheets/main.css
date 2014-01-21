@@ -56,7 +56,7 @@ p {
 }
 
 p.lead {
-  color: #ff755a;
+  color: #532E8B;
 }
 
 a {
@@ -70,7 +70,7 @@ a:hover {
 }
 
 .btn-main {
-	  background: #ff755a repeat scroll 0 0;
+	  background: #532E8B repeat scroll 0 0;
     border: none;
     font-weight: 800;
     border-radius: 2px;
@@ -105,11 +105,11 @@ a:hover {
 }
 
 ::selection {
-	background: #ff755a; /* Safari */
+	background: #532E8B; /* Safari */
 	color: #FFFFFF;
 }
 ::-moz-selection {
-	background: #ff755a; /* Firefox */
+	background: #532E8B; /* Firefox */
 	color: #FFFFFF;
 }
 
@@ -182,7 +182,7 @@ a:hover {
   color: #FFFFFF;
 }
 .orange {
-  color: #ff755a;
+  color: #532E8B;
 }
 
 
@@ -191,14 +191,14 @@ a:hover {
    ========================================================================== */
 
 .navbar-inverse .navbar-inner {
-  background: #ff755a;
+  background: #532E8B;
   background-repeat: repeat-x;
-  border-color: #ff755a;
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff755a', endColorstr='#ff755a', GradientType=0)
+  border-color: #532E8B;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#532E8B', endColorstr='#532E8B', GradientType=0)
 }
 
 .nav-collapse, .nav-collapse.collapse {
-    background: none repeat scroll 0 0 #ff755a;
+    background: none repeat scroll 0 0 #532E8B;
     height: 0;
     overflow: hidden;
 }
@@ -294,7 +294,7 @@ a:hover {
     background-image: none;
     background-image: -webkit-linear-gradient(linear, 0% 0%, 0% 100%, from(transparent), to(transparent));
     background-repeat: no-repeat;
-    color: #ff755a;
+    color: #532E8B;
     text-decoration: none;
 }
 
@@ -373,17 +373,17 @@ a:hover {
 
 
 .one {
-  background: url(../img/header1.jpg) no-repeat center center;
+  background: url(header1.jpg) no-repeat center center;
   background-size: cover;
 }
 
 .two {
-  background: url(../img/header2.jpg) no-repeat center center;
+  background: url(header2.jpg) no-repeat center center;
   background-size: cover;
 }
 
 .three {
-  background: url(../img/header3.jpg) no-repeat center center;
+  background: url(header3.jpg) no-repeat center center;
   background-size: cover;
 }
 
@@ -409,7 +409,7 @@ a:hover {
 }
 
 #content2 {
-  background: url(../img/grid_noise.png) repeat;
+  background: url(grid_noise.png) repeat;
   background-color: #ebebeb;
   padding-top: 120px;
   padding-bottom: 120px;
@@ -470,7 +470,7 @@ a:hover {
 }
 
 .side-links li a {
-  color: #ff755a;
+  color: #532E8B;
   font-weight: 600;
 }
 
@@ -623,7 +623,7 @@ a:hover {
 }
 
 .team-info {
-  background: #ff755a;
+  background: #532E8B;
   padding: 10px 10px 10px 10px;
   height: 60px;
 }
@@ -677,7 +677,7 @@ a:hover {
 
 
 .headline {
-  background: #ff755a;
+  background: #532E8B;
   padding: 6px 6px 0px 6px;
   background-size: contain;
   position: relative;
@@ -696,7 +696,7 @@ bottom: -15px;
 left: 44%;
 border-style: solid;
 border-width: 15px 15px 0;
-border-color: #ff755a transparent;
+border-color: #532E8B transparent;
 display: block;
 z-index: 1;
 }
@@ -788,14 +788,14 @@ select, input[type="text"], input[type="password"], input[type="datetime"], inpu
    Sign Up Page styles
    ========================================================================== */
 #signup {
-  background: url(../img/testimonial-bg.jpg) no-repeat;
+  background: url(testimonial-bg.jpg) no-repeat;
   background-size: cover;
   padding-top: 120px;
   padding-bottom: 120px;
 } 
 
 .signup {
-  background: url(../img/grid_noise.png) repeat;
+  background: url(grid_noise.png) repeat;
   background-color: #ebebeb;
   padding-top: 30px;
   margin-top: 22px;
@@ -908,7 +908,7 @@ ul.social-icons-signup li a:hover {
    Latest Work and Portfolio Styles
    ========================================================================== */
 #latest-work {
-  background: url(../img/grid_noise.png) repeat;
+  background: url(grid_noise.png) repeat;
   background-color: #ebebeb;
   padding-top: 120px;
   padding-bottom: 120px;
@@ -973,14 +973,14 @@ ul.icons li {
    Testimonial styles
    ========================================================================== */
 #testimonial {
-  background: url(../img/testimonial-bg.jpg) no-repeat;
+  background: url(testimonial-bg.jpg) no-repeat;
   background-size: cover;
   padding-top: 120px;
   padding-bottom: 120px;
 }
 
 .testimonial-source {
-  background: #ff755a;
+  background: #532E8B;
   text-align: center;
   padding: 12px 14px;
   color: #FFFFFF;
@@ -1105,7 +1105,7 @@ ul#twitter_update_list li {
 }
 
 #bottom p a:hover {
-  color: #ff755a;
+  color: #532E8B;
 	text-decoration: none;
 }
 
@@ -1128,7 +1128,7 @@ ul.social-icons li {
 }
 
 ul.social-icons li a {
-	color: #ff755a;
+	color: #532E8B;
 	text-decoration: none;
 }
 

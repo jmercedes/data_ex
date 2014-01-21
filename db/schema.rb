@@ -17,9 +17,7 @@ ActiveRecord::Schema.define(version: 20140121120903) do
   enable_extension "plpgsql"
 
   create_table "results", force: true do |t|
-    t.string   "patient"
-    t.integer  "age"
-    t.string   "gender"
+    t.string   "company"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
