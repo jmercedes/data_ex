@@ -11,12 +11,35 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140121120903) do
+ActiveRecord::Schema.define(version: 20140121230503) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "results", force: true do |t|
+  create_table "fiscal_reports", force: true do |t|
+    t.string   "company"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "form606", force: true do |t|
+    t.string   "company"
+    t.string   "vendor"
+    t.string   "fiscal_id"
+    t.string   "tipo_bienes_servicios"
+    t.string   "ncf"
+    t.string   "ncf_modificado"
+    t.string   "fecha_de_compra"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "form606s", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "form607s", force: true do |t|
     t.string   "company"
     t.datetime "created_at"
     t.datetime "updated_at"

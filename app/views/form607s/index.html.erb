@@ -1,0 +1,27 @@
+<h1>Listing form607s</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Company</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @form607s.each do |form607| %>
+      <tr>
+        <td><%= form607.company %></td>
+        <td><%= link_to 'Show', form607 %></td>
+        <td><%= link_to 'Edit', edit_form607_path(form607) %></td>
+        <td><%= link_to 'Destroy', form607, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Form607', new_form607_path %>

@@ -1,6 +1,9 @@
 CmpcLabDelta::Application.routes.draw do
-  resources :results
-  root to: 'results#index'
+  match 'apis/quickbooks/:action', :controller => 'qbwc', :as => 'quickbooks'
+  resources :form607s
+
+  resources :fiscal_reports
+  root to: 'fiscal_reports#index'
 
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.

@@ -416,9 +416,10 @@ a:hover {
 }
 
 #page-title {
-  background: #ffffff;
-  padding-top: 120px;
+  background: #ebebeb;
+  padding-top: 80px;
   padding-bottom: 40px;
+	border-bottom: 1px solid #dae3e9;
 }
 
 

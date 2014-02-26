@@ -45,5 +45,6 @@ end
 # gem 'debugger', group: [:development, :test]
 gem 'devise'
 gem 'prawn'
-gem 'font-awesome-rails'
+gem 'font-awesome-sass'
 gem 'figaro'
+gem 'qbwc'

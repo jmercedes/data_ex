@@ -1,0 +1,91 @@
+
+
+<!--Content-->
+<section id="page-title">
+  <div class="container">
+    <div class="row">
+      <div class="span12 text-center">
+        <h3>Panel de Control</h3>
+      </div>
+    </div>
+  </div>
+</section>
+  
+ 
+<!--Work-->
+<section id="content2">
+
+  <div class="container text-center">
+
+		<a class="btn btn-lg btn-main" href="#">
+		  <i class="fa fa-bars fa-3x pull-left"></i> 
+		 FORM 606</a>
+
+
+		<a class="btn btn-lg btn-main" href="#">
+		  <i class="fa fa-bars fa-3x pull-left"></i> 
+		 FORM 607</a>
+
+
+		<a class="btn btn-lg btn-main" href="#">
+		  <i class="fa fa-money fa-3x pull-left"></i> 
+		 CHEQUES</a>
+
+
+		<a class="btn btn-lg btn-main" href="#"><i class="fa fa-usd fa-3x pull-left"></i>RECIBOS</a>
+	          
+      
+    			
+    		
+    		</div><!--End Row of Work-->
+      
+  </div>
+</section>          
+
+    
+<!--Twitter Feed-->
+<section id="twitter">
+  <div class="container">
+    <div class="row">
+      <div class="span12 text-center">
+        <i class="icon-twitter icon-4x gray margin-20"></i>
+          <div class="twitter-feed">
+  					<ul id="twitter_update_list" class="rotate"></ul>
+  				</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<h1>Listing results</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Patient</th>
+      <th>Age</th>
+      <th>Gender</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @fiscal_reports.each do |report| %>
+      <tr>
+        <td><%= result.patient %></td>
+        <td><%= result.age %></td>
+        <td><%= result.gender %></td>
+        <td><%= link_to 'Show', fiscal_report %></td>
+        <td><%= link_to 'Edit', edit_fiscal_report_path(report) %></td>
+        <td><%= link_to 'Destroy', result, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Result', new_fiscal_report_path %>
