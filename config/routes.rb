@@ -1,5 +1,5 @@
 CmpcLabDelta::Application.routes.draw do
-  match 'apis/quickbooks/:action', :controller => 'qbwc', :as => 'quickbooks'
+  get 'apis/quickbooks/:action', :controller => 'qbwc', :as => 'quickbooks'
   resources :form607s
 
   resources :fiscal_reports
