@@ -5,6 +5,10 @@ class Form607sController < ApplicationController
   # GET /form607s.json
   def index
     @form607s = Form607.all
+    respond_to do |format|
+      format.html
+      format.xls { send_data @form607s.to_xls(col_sep: "\t") }
+    end
   end
 
   # GET /form607s/1
