@@ -1,0 +1,51 @@
+<h1>Listing expenses</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Line</th>
+      <th>Businessid</th>
+      <th>Typeid</th>
+      <th>Account</th>
+      <th>Ncf</th>
+      <th>Modified document</th>
+      <th>Voucher date</th>
+      <th>Payment date</th>
+      <th>Billed itbis</th>
+      <th>Retained itbis</th>
+      <th>Amount billed</th>
+      <th>Retained isr</th>
+      <th>Status</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @expenses.each do |expense| %>
+      <tr>
+        <td><%= expense.line %></td>
+        <td><%= expense.businessid %></td>
+        <td><%= expense.typeid %></td>
+        <td><%= expense.account_id %></td>
+        <td><%= expense.ncf %></td>
+        <td><%= expense.modified_document %></td>
+        <td><%= expense.voucher_date %></td>
+        <td><%= expense.payment_date %></td>
+        <td><%= expense.billed_itbis %></td>
+        <td><%= expense.retained_itbis %></td>
+        <td><%= expense.amount_billed %></td>
+        <td><%= expense.retained_isr %></td>
+        <td><%= expense.status %></td>
+        <td><%= link_to 'Show', expense %></td>
+        <td><%= link_to 'Edit', edit_expense_path(expense) %></td>
+        <td><%= link_to 'Destroy', expense, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Expense', new_expense_path %>

@@ -11,10 +11,34 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140121230503) do
+ActiveRecord::Schema.define(version: 20140227212232) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "accounts", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "expenses", force: true do |t|
+    t.integer  "line"
+    t.integer  "businessid"
+    t.integer  "typeid"
+    t.integer  "account_id"
+    t.string   "ncf"
+    t.string   "modified_document"
+    t.date     "voucher_date"
+    t.date     "payment_date"
+    t.float    "billed_itbis"
+    t.float    "retained_itbis"
+    t.float    "amount_billed"
+    t.float    "retained_isr"
+    t.string   "status"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "fiscal_reports", force: true do |t|
     t.string   "company"

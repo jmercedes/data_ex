@@ -1,0 +1,69 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Line:</strong>
+  <%= @expense.line %>
+</p>
+
+<p>
+  <strong>Businessid:</strong>
+  <%= @expense.businessid %>
+</p>
+
+<p>
+  <strong>Typeid:</strong>
+  <%= @expense.typeid %>
+</p>
+
+<p>
+  <strong>Account:</strong>
+  <%= @expense.account_id %>
+</p>
+
+<p>
+  <strong>Ncf:</strong>
+  <%= @expense.ncf %>
+</p>
+
+<p>
+  <strong>Modified document:</strong>
+  <%= @expense.modified_document %>
+</p>
+
+<p>
+  <strong>Voucher date:</strong>
+  <%= @expense.voucher_date %>
+</p>
+
+<p>
+  <strong>Payment date:</strong>
+  <%= @expense.payment_date %>
+</p>
+
+<p>
+  <strong>Billed itbis:</strong>
+  <%= @expense.billed_itbis %>
+</p>
+
+<p>
+  <strong>Retained itbis:</strong>
+  <%= @expense.retained_itbis %>
+</p>
+
+<p>
+  <strong>Amount billed:</strong>
+  <%= @expense.amount_billed %>
+</p>
+
+<p>
+  <strong>Retained isr:</strong>
+  <%= @expense.retained_isr %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @expense.status %>
+</p>
+
+<%= link_to 'Edit', edit_expense_path(@expense) %> |
+<%= link_to 'Back', expenses_path %>

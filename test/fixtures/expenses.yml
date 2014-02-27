@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  line: 1
+  businessid: 1
+  typeid: 1
+  account_id: 1
+  ncf: MyString
+  modified_document: MyString
+  voucher_date: 2014-02-27
+  payment_date: 2014-02-27
+  billed_itbis: 1.5
+  retained_itbis: 1.5
+  amount_billed: 1.5
+  retained_isr: 1.5
+  status: MyString
+
+two:
+  line: 1
+  businessid: 1
+  typeid: 1
+  account_id: 1
+  ncf: MyString
+  modified_document: MyString
+  voucher_date: 2014-02-27
+  payment_date: 2014-02-27
+  billed_itbis: 1.5
+  retained_itbis: 1.5
+  amount_billed: 1.5
+  retained_isr: 1.5
+  status: MyString

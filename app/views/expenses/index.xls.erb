@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+  <Worksheet ss:Name="Sheet1">
+    <Table>
+      <Row>
+        <Cell><Data ss:Type="String">Línea</Data></Cell>
+        <Cell><Data ss:Type="String">RNC o Cédula</Data></Cell>
+        <Cell><Data ss:Type="String">Tipo ID</Data></Cell>
+        <Cell><Data ss:Type="String">Tipo bienes y servicios comprados</Data></Cell>
+        <Cell><Data ss:Type="String">NCF</Data></Cell>
+        <Cell><Data ss:Type="String">NCF o Documento Modificado</Data></Cell>
+        <Cell><Data ss:Type="String">Fecha de comprobante</Data></Cell>
+        <Cell><Data ss:Type="String">Fecha de pago</Data></Cell>
+        <Cell><Data ss:Type="String">Itbis facturado</Data></Cell>
+        <Cell><Data ss:Type="String">Itbis retenido</Data></Cell>
+        <Cell><Data ss:Type="String">Monto facturado</Data></Cell>
+        <Cell><Data ss:Type="String">Retención renta</Data></Cell>
+        <Cell><Data ss:Type="String">Status</Data></Cell>
+      </Row>
+	    <%= @expenses.each do |expense| %>
+      <Row>
+        <Cell><Data ss:Type="String"><%= expense.line %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= expense.businessid %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= expense.typeid %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= expense.account_id %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= expense.ncf %>NCF</Data></Cell>
+        <Cell><Data ss:Type="String"><%= expense.modified_document %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= expense.voucher_date %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= expense.payment_date %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= expense.billed_itbis %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= expense.retained_itbis %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= expense.amount_billed %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= expense.retained_isr %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= expense.status %></Data></Cell>
+      </Row>
+			<% end %>
+    </Table>
+  </Worksheet>
+</Workbook>

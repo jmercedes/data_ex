@@ -1,4 +1,8 @@
 CmpcLabDelta::Application.routes.draw do
+  resources :accounts
+
+  resources :expenses
+
   get 'apis/quickbooks/:action', :controller => 'qbwc', :as => 'quickbooks'
   resources :form607s
 

@@ -1,0 +1,69 @@
+<%= form_for(@expense) do |f| %>
+  <% if @expense.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@expense.errors.count, "error") %> prohibited this expense from being saved:</h2>
+
+      <ul>
+      <% @expense.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :line %><br>
+    <%= f.number_field :line %>
+  </div>
+  <div class="field">
+    <%= f.label :businessid %><br>
+    <%= f.number_field :businessid %>
+  </div>
+  <div class="field">
+    <%= f.label :typeid %><br>
+    <%= f.number_field :typeid %>
+  </div>
+  <div class="field">
+    <%= f.label :account_id %><br>
+    <%= f.number_field :account_id %>
+  </div>
+  <div class="field">
+    <%= f.label :ncf %><br>
+    <%= f.text_field :ncf %>
+  </div>
+  <div class="field">
+    <%= f.label :modified_document %><br>
+    <%= f.text_field :modified_document %>
+  </div>
+  <div class="field">
+    <%= f.label :voucher_date %><br>
+    <%= f.date_select :voucher_date %>
+  </div>
+  <div class="field">
+    <%= f.label :payment_date %><br>
+    <%= f.date_select :payment_date %>
+  </div>
+  <div class="field">
+    <%= f.label :billed_itbis %><br>
+    <%= f.text_field :billed_itbis %>
+  </div>
+  <div class="field">
+    <%= f.label :retained_itbis %><br>
+    <%= f.text_field :retained_itbis %>
+  </div>
+  <div class="field">
+    <%= f.label :amount_billed %><br>
+    <%= f.text_field :amount_billed %>
+  </div>
+  <div class="field">
+    <%= f.label :retained_isr %><br>
+    <%= f.text_field :retained_isr %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br>
+    <%= f.text_field :status %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
