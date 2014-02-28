@@ -2,7 +2,7 @@ class CreateExpenses < ActiveRecord::Migration
   def change
     create_table :expenses do |t|
       t.integer :line
-      t.integer :businessid
+      t.string :businessid
       t.integer :typeid
       t.integer :account_id
       t.string :ncf

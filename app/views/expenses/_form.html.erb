@@ -9,102 +9,6 @@
 	 </div>
 </section>
 
-	    <!-- sidebar -->
-	    <div id="sidebar-nav">
-	        <ul id="dashboard-menu">
-	            <li class="active">
-	                <div class="pointer">
-	                    <div class="arrow"></div>
-	                    <div class="arrow_border"></div>
-	                </div>
-	                <a href="index.html">
-	                    <i class="icon-home"></i>
-	                    <span>Home</span>
-	                </a>
-	            </li>            
-	            <li>
-	                <a href="chart-showcase.html">
-										<p><i class="fa fa-refresh fa-2x"></i><span>Refrescar</span></p>
-	                </a>
-	            </li>
-	            <li>
-	                <a class="dropdown-toggle" href="#">
-											<p><i class="fa fa-th-list fa-2x"></i><span>S/R</span></p>
-	                </a>
-	            </li>
-	            <li>
-	                <a class="dropdown-toggle" href="#">
-										<p><i class="fa fa-edit fa-2x"></i><span>Plantilla</span></p>
-	                </a>
-	            </li>
-	            <li>
-	                <a href="gallery.html">
-										<p><i class="fa fa-table fa-2x"></i><span>Excel</span></p>
-	                </a>
-	            </li>
-	            <li>
-	                <a href="calendar.html">
-										<p><i class="fa fa-th-list fa-2x"></i><span>N/A</span></p>
-	                </a>
-	            </li>
-	            <li>
-	                <a class="dropdown-toggle" href="tables.html">
-										<p><i class="fa fa-list-alt fa-2x"></i><span>DGII 606</span></p>
-	                </a>
-	            </li>
-	        </ul>
-	    </div>
-<!-- end sidebar -->
-
-<!-- main container -->
-  <div class="content">
-     <div class="container-fluid">
-
-	            <!-- upper main stats -->
-	            <div id="main-stats">
-	                <div class="row-fluid stats-row">
-	                    <div class="span3 stat">
-	                        <div class="data">
-	                            <span class="number">$2,457,000</span>
-	                        </div>
-	                        <span class="date">ITBIS Retenido</span>
-	                    </div>
-	                    <div class="span3 stat">
-	                        <div class="data">
-	                            <span class="number">$4,234,000</span>
-	                        </div>
-	                        <span class="date">ITBIS Facturado</span>
-	                    </div>
-	                    <div class="span3 stat">
-	                        <div class="data">
-	                            <span class="number">$1,567,876</span>
-	                        </div>
-	                        <span class="date">Bruto Facturado</span>
-	                    </div>
-	                    <div class="span3 stat last">
-	                        <div class="data">
-	                            <span class="number">$2,340,432</span>
-	                        </div>
-	                        <span class="date">Total ISR Retenido</span>
-	                    </div>
-	                </div>
-	            </div>
-	            <!-- end upper main stats -->  
-
-	            <!-- upper main stats -->
-	            <div id="main-stats">
-	                <div class="row-fluid stats-row">
-	                    <div class="span9 stat2 text-left">
-		                       <input type="text" value="03/29/2013" class="input-large datepicker" />
-		                       <input type="text" value="03/29/2013" class="input-large datepicker" />
-		                       <input type="submit" value="Generar" class="btn-main" />													
-	                    </div>
-	                </div>
-	            </div>
-	            <!-- end upper main stats -->  
-
-
-
 					    <!--Content-->
 					    <section>
 					      <div class="container">
@@ -142,31 +46,53 @@
 	                        <table class="table table-hover">
 	                            <thead>
 	                                <tr>
-                                    	<th class="span3">RNC</th>
-	                                    <th class="span3">NCF</th>
-	                                    <th class="span3">Fecha Compra</th>
-	                                    <th class="span3">Fecha Pago</th>
-	                                    <th class="span3">Itbis Facturado</th>
-	                                    <th class="span3">ITBIS Retenido</th>
-	                                    <th class="span3">Facturado</th>
-	                                    <th class="span3">ISR</th>
-	                                    <th class="span3"><span class="line"></span>Status</th>
+                                 		<th class="span3">RNC o Cédula</th>
+                                    <th class="span3">Tipo ID</th>
+                                    <th class="span4">Cuentas</th>
+                                    <th class="span3">NCF</th>
+                                    <th class="span3">Documento Modificado</th>
+                                    <th class="span3">Fecha Comprobante</th>
+                                    <th class="span3">Fecha de pago</th>
+                                    <th class="span3">ITBIS facturado</th>
+                                    <th class="span3">ITBIS Retenido</th>
+                                    <th class="span3">Monto Facturado</th>
+                                    <th class="span3">ISR Retenido</th>
+                                    <th class="span3"><span class="line"></span>Status</th>
 	                                </tr>
 	                            </thead>
 	                            <tbody>
-	                                <!-- row -->
+	                                <!-- row --> 
+																	<%= form_for(@expense) do |f| %>
+																	<% if @expense.errors.any? %>
+																    <div id="error_explanation">
+																      <h2><%= pluralize(@expense.errors.count, "error") %>
+																					prohibited this company from being saved:</h2>
+																      <ul>
+																      <% @expense.errors.full_messages.each do |msg| %>
+																        <li><%= msg %></li>
+																      <% end %>
+																      </ul>
+																    </div>
+																  <% end %>
+																  	
 	                                <tr class="first">
-	                                    <td>0000000000000</td>
-	                                    <td>0000000000000</td>
-	                                    <td>2014/02/08</td>
-	                                    <td>2014/02/08</td>
-	                                    <td>2,000.00</td>
-	                                    <td>2,000.00</td>
-	                                    <td>2,000.00</td>
-	                                    <td>2,000.00</td>
+	                                    <td><%= f.number_field :businessid %></td>
+	                                    <td><%= f.number_field :typeid %></td>
+	                                    <td><%= f.number_field :account_id %></td>
+	                                    <td><%= f.text_field :ncf %></td>
+	                                    <td><%= f.text_field :modified_document %></td>
+	                                    <td><%= f.date_select :voucher_date %></td>
+	                                    <td><%= f.date_select :payment_date %></td>
+	                                    <td><%= f.text_field :billed_itbis %></td>
+	                                    <td><%= f.text_field :retained_itbis %></td>
+	                                    <td><%= f.text_field :billed_itbis %></td>
+	                                    <td><%= f.text_field :retained_isr %></td>
 	                                    <td><span class="label label-info">Standby</span></td>
 
 	                                </tr>
+																    <%= f.submit %>
+																  
+																	<% end %>
 	                                <!-- row -->
 	                            </tbody>
 	                        </table>
@@ -186,73 +112,4 @@
     </div>
 </div>
 
-
-<%= form_for(@expense) do |f| %>
-  <% if @expense.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@expense.errors.count, "error") %> prohibited this expense from being saved:</h2>
-
-      <ul>
-      <% @expense.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :line %><br>
-    <%= f.number_field :line %>
-  </div>
-  <div class="field">
-    <%= f.label :businessid %><br>
-    <%= f.number_field :businessid %>
-  </div>
-  <div class="field">
-    <%= f.label :typeid %><br>
-    <%= f.number_field :typeid %>
-  </div>
-  <div class="field">
-    <%= f.label :account_id %><br>
-    <%= f.number_field :account_id %>
-  </div>
-  <div class="field">
-    <%= f.label :ncf %><br>
-    <%= f.text_field :ncf %>
-  </div>
-  <div class="field">
-    <%= f.label :modified_document %><br>
-    <%= f.text_field :modified_document %>
-  </div>
-  <div class="field">
-    <%= f.label :voucher_date %><br>
-    <%= f.date_select :voucher_date %>
-  </div>
-  <div class="field">
-    <%= f.label :payment_date %><br>
-    <%= f.date_select :payment_date %>
-  </div>
-  <div class="field">
-    <%= f.label :billed_itbis %><br>
-    <%= f.text_field :billed_itbis %>
-  </div>
-  <div class="field">
-    <%= f.label :retained_itbis %><br>
-    <%= f.text_field :retained_itbis %>
-  </div>
-  <div class="field">
-    <%= f.label :amount_billed %><br>
-    <%= f.text_field :amount_billed %>
-  </div>
-  <div class="field">
-    <%= f.label :retained_isr %><br>
-    <%= f.text_field :retained_isr %>
-  </div>
-  <div class="field">
-    <%= f.label :status %><br>
-    <%= f.text_field :status %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+<hr>

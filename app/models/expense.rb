@@ -28,11 +28,11 @@ class Expense < ActiveRecord::Base
      end 
    end
    
-   validates :modified_document, length: { is: 19 }
-   validates :billed_itbis, numericality: true
-   validates :retained_itbis, numericality: true
-   validates :amount_billed, numericality: true
-   validates :retained_isr, numericality: true
+   #validates :modified_document, length: { is: 19 }
+   #validates :billed_itbis, numericality: true
+   #validates :retained_itbis, numericality: true
+   #validates :amount_billed, numericality: true
+   #validates :retained_isr, numericality: true
   
   
   def self.to_csv(options = {})

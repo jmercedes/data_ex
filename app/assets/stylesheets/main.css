@@ -764,7 +764,7 @@ z-index: 1;
     width: 100%;
 }
 
-
+/*
 textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
     background-color: #ffffff;
     border: 0 solid #CCCCCC;
@@ -772,12 +772,14 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
     transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
 }
 
+*/
+
 select, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
     border-radius: 2px 2px 2px 2px;
     color: #555555;
     display: inline-block;
-    height: 37px;
-    font-size: 14px;
+    height: 20px;
+    font-size: 8px;
     line-height: 15px;
     margin-bottom: 0px;
     padding: 2px 6px;

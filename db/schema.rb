@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 20140228173009) do
 
   create_table "expenses", force: true do |t|
     t.integer  "line"
-    t.integer  "businessid"
+    t.string   "businessid"
     t.integer  "typeid"
     t.integer  "account_id"
     t.string   "ncf"
