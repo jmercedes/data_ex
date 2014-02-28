@@ -1,4 +1,6 @@
 CmpcLabDelta::Application.routes.draw do
+  resources :companies
+
   resources :accounts
 
   resources :expenses
