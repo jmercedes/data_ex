@@ -1,5 +1,14 @@
 class Expense < ActiveRecord::Base
   
+  belongs_to :company
+  
+  # method to retreive information from Quick Books
+  
+  #client = Savon::Client.new('quickbooks request url...')
+  #response = client.request
+  #data = response.to_hash[]
+  #@
+  
    validates :ncf, length: { is: 19 }
    #validates_with  validate_businessid, :businessid
    
